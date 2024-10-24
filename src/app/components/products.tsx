@@ -1,14 +1,20 @@
+"use client"
+
 import Image from "next/image";
-import { getProducts } from "../utils/api";
+import { useProducts } from "../hooks/useProducts";
 
-export const Products = async() => {
-    const products = await getProducts();
+export const Products = () => {
 
+//get products via the useProducts hook
+    const { products, isLoading, isError } = useProducts();
+    
     return (
         <section>
         <h1 className="text-xl pb-4">Products</h1>
         <ul>
-            {products.map((product) => (
+            {isLoading && <p>Loading...</p>}
+            {isError && <p>Something went wrong...</p>}
+            {products && products.map((product) => (
                 <li key={product.id} className="mb-4 border rounded p-4">
                     <h2>{product.title}</h2>
                     <p>{product.price}</p>
