@@ -2,6 +2,12 @@ import React from 'react'
 import { Products } from './products'
 
 describe('In memory tests for the <Products /> component', () => {
+  beforeEach(() => {
+    cy.log('I run before every test in every spec file!!!!!!')
+    cy.intercept('GET', 'https://fakestoreapi.com/products', { fixture: 'fakeProducts.json' })
+
+
+  })
   it('renders', () => {
     // see: https://on.cypress.io/mounting-react
     cy.mount(<Products />)
@@ -36,7 +42,7 @@ describe('In memory tests for the <Products /> component', () => {
   // test that the component renders the product details
   it('renders product details', () => {
     cy.mount(<Products />)
-    cy.get('li')
+    cy.get('li') 
     .first() 
     .find('p')
     .should('have.length', 3)         

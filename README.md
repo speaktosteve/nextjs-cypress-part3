@@ -1,3 +1,10 @@
+## What is this?
+
+This is a simple Next.js used to demonstrate how to setup Cypress and Cypress Intercept to run component tests
+
+The rest is boilerplate stuff...
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
