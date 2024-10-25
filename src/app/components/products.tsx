@@ -4,18 +4,17 @@ import Image from "next/image";
 import { useProducts } from "../hooks/useProducts";
 
 export const Products = () => {
-
-//get products via the useProducts hook
     const { products, isLoading, isError } = useProducts();
     
     return (
         <section>
         <h1 className="text-xl pb-4">Products</h1>
-        <ul>
+        <ul className="grid md:grid-cols-2">
             {isLoading && <p>Loading...</p>}
             {isError && <p>Something went wrong...</p>}
+            {products && products.length === 0 && <p>No products found</p>}
             {products && products.map((product) => (
-                <li key={product.id} className="mb-4 border rounded p-4">
+                <li key={product.id} className="border rounded m-4 p-8">
                     <h2>{product.title}</h2>
                     <p>{product.price}</p>
                     <p>{product.category}</p>   
