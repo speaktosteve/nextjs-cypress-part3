@@ -4,10 +4,11 @@ This is a simple Next.js used to demonstrate how to setup Cypress and Cypress In
 
 See the articles that reference this repo:
 
--   https://speaktosteve.github.io/component-testing-in-nextjs-using-cypress-part-1-set-up
--   https://speaktosteve.github.io/component-testing-in-nextjs-using-cypress-part-2-network-intercepting
+-   component-testing-in-nextjs-using-cypress-part-3-server-components
 
 The rest is boilerplate stuff...
+
+---
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
