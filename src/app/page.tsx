@@ -1,12 +1,11 @@
-import { Products } from "./components/products";
+import { Products } from './components/products'
 
 const Home = () => {
-  return (
-    <div className="mx-auto py-8 w-3/4">
-      <Products />
-    </div>
-  )
+    return (
+        <>
+            <Products />
+        </>
+    )
 }
 
-
-export default Home;
+export default Home
