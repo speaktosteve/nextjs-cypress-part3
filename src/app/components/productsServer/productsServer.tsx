@@ -3,8 +3,13 @@ import { ProductCard } from '../productCard/productCard'
 import { IProduct } from '@/app/types/product'
 
 export const ProductsServer = async () => {
-    const products: IProduct[] = await getProducts()
+    const response = await getProducts()
 
+    if (!response.ok) {
+        return <p>Something went wrong...</p>
+    }
+
+    const products: IProduct[] = await response.json()
     return (
         <section>
             <h2 className="text-xl pb-4">Products</h2>

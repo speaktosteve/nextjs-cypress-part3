@@ -1,5 +1,3 @@
-import { IProduct } from '../types/product'
-
-export const getProducts = async (): Promise<IProduct[]> => {
-    return (await fetch('https://fakestoreapi.com/products')).json()
+export const getProducts = async (): Promise<Response> => {
+    return await fetch('https://fakestoreapi.com/products')
 }

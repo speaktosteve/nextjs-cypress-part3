@@ -4,7 +4,7 @@ import { IProduct } from '../../types/product'
 export const ProductCard = ({ product }: { product: IProduct }) => {
     return (
         <li key={product.id} className="border rounded m-4 p-8 list-none">
-            <h2 className="font-bold text-lg pb-3">{product.title}</h2>
+            <h3 className="font-bold text-lg pb-3">{product.title}</h3>
             <p>{product.price}</p>
             <p>{product.category}</p>
             <p>{product.description}</p>
