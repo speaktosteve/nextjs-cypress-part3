@@ -14,6 +14,9 @@ export default defineConfig({
         setupNodeEvents(on, config) {
             // implement node event listeners here
         },
-        specPattern: 'src/app/components/**/*.e2e.cy.{js,ts,jsx,tsx}', // Change this to your preferred folder
+        specPattern: [
+            'cypress/e2e/*.{js,ts,jsx,tsx}',
+            'src/app/components/**/*.e2e.cy.{js,ts,jsx,tsx}',
+        ], // Change this to your preferred folder
     },
 })
