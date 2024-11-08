@@ -1,11 +1,7 @@
-import { Products } from './components/products'
+import { Products } from './components/products/products'
 
 const Home = () => {
-    return (
-        <>
-            <Products />
-        </>
-    )
+    return <Products />
 }
 
 export default Home

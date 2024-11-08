@@ -1,4 +1,4 @@
-import { ProductsServer } from '../components/productsServer'
+import { ProductsServer } from '../components/productsServer/productsServer'
 
 const Page = () => {
     return <ProductsServer />

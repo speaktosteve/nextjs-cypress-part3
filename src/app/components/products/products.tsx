@@ -1,7 +1,7 @@
 'use client'
 
-import { useProducts } from '../hooks/useProducts'
-import { ProductCard } from './product'
+import { useProducts } from '@/app/hooks/useProducts'
+import { ProductCard } from '../productCard/productCard'
 
 export const Products = () => {
     const { products, isLoading, isError, isLoadingTooSlow } = useProducts()
