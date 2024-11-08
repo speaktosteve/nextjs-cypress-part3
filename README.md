@@ -1,6 +1,6 @@
 ## What is this?
 
-This is a simple Next.js used to demonstrate how to setup Cypress and Cypress Intercept to run component tests
+This is a simple Next.js used to demonstrate how to setup Cypress, Storybook and use Cypress Intercept to run component tests against server-rendered components
 
 See the articles that reference this repo:
 
