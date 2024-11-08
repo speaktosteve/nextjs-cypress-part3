@@ -4,7 +4,7 @@ This is a simple Next.js used to demonstrate how to setup Cypress and Cypress In
 
 See the articles that reference this repo:
 
--   component-testing-in-nextjs-using-cypress-part-3-server-components
+-   https://speaktosteve.github.io/component-testing-in-nextjs-using-cypress-part-3-server-components
 
 The rest is boilerplate stuff...
 
