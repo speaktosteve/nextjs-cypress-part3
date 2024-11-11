@@ -29,12 +29,9 @@ describe('Tests for the <Products /> component', () => {
     // test that the component renders the product title
     it('renders product title', () => {
         cy.mount(<Products />)
-        cy.get('li')
-            .first()
-            .get('h2')
-            .should('exist')
-            .invoke('text')
-            .should('not.be.empty')
+        cy.get('ul > li:first')
+            .find('h3')
+            .should('have.text', 'Fake Product From The Stubbed Data')
     })
     // test that the component renders the product details
     it('renders product details', () => {
