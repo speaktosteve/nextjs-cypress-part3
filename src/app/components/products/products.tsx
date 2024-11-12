@@ -8,7 +8,7 @@ export const Products = () => {
 
     return (
         <section>
-            <h2 className="text-xl pb-4">Products</h2>
+            <h2 className="text-xl pb-4">Products (Client-Rendered)</h2>
             {isLoading && <p>Loading...</p>}
             {isError && <p>Something went wrong...</p>}
             {isLoadingTooSlow && <p>This is taking longer than expected...</p>}
