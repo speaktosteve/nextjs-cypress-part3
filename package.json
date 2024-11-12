@@ -1,42 +1,43 @@
 {
-    "name": "nextjs-cypress",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev --turbopack",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "cypress": "cypress open",
-        "cypress:run-component": "cypress run --component",
-        "storybook": "storybook dev -p 6006",
-        "storybook:build": "storybook build"
-    },
-    "dependencies": {
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1"
-    },
-    "devDependencies": {
-        "@chromatic-com/storybook": "^3.2.2",
-        "@storybook/addon-essentials": "^8.4.2",
-        "@storybook/addon-interactions": "^8.4.2",
-        "@storybook/addon-onboarding": "^8.4.2",
-        "@storybook/blocks": "^8.4.2",
-        "@storybook/nextjs": "^8.4.2",
-        "@storybook/react": "^8.4.2",
-        "@storybook/test": "^8.4.2",
-        "@types/node": "^20",
-        "@types/react": "^18",
-        "@types/react-dom": "^18",
-        "cypress": "^13.15.0",
-        "eslint": "^8",
-        "eslint-config-next": "15.0.1",
-        "eslint-plugin-storybook": "^0.11.0",
-        "next": "^15.0.1",
-        "postcss": "^8",
-        "prettier-plugin-tailwindcss": "^0.6.8",
-        "storybook": "^8.4.2",
-        "tailwindcss": "^3.4.1",
-        "typescript": "^5"
-    }
+  "name": "nextjs-cypress",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "cypress:run-component": "cypress run --component",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.2",
+    "@storybook/addon-interactions": "^8.4.2",
+    "@storybook/addon-onboarding": "^8.4.2",
+    "@storybook/blocks": "^8.4.2",
+    "@storybook/nextjs": "^8.4.2",
+    "@storybook/react": "^8.4.2",
+    "@storybook/test": "^8.4.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cypress": "^13.15.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.1",
+    "eslint-plugin-storybook": "^0.11.0",
+    "next": "^15.0.1",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "storybook": "^8.4.2",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
 }

@@ -14,7 +14,7 @@ describe('Tests for the <Products /> component', () => {
     // test that the component shows the correct header
     it('renders header', () => {
         cy.mount(<Products />)
-        cy.get('h2').should('have.text', 'Products')
+        cy.get('h2').should('have.text', 'Products (Client-Rendered)')
     })
     // test that the component shows a loading message
     it('shows loading message', () => {
